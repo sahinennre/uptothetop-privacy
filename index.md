@@ -7,9 +7,11 @@ hangi bilgileri kullandığını, nerede sakladığını ve kimlerle paylaştı�
 
 ## Kısaca
 
-- Oyun **kendi sunucusuna hiçbir veri göndermez**; bizim bir sunucumuz yok.
+- Oyun yalnızca **dünya liderlik tablosu** için oyun içi adınızı ve NORMAL
+  rekorunuzu Google Firebase'teki tablomuza gönderir (aşağıya bakın); bunun
+  dışında hiçbir veri göndermez.
 - **Analitik, takip ya da reklam** kullanılmaz.
-- Ödemeler ve liderlik tablosu **Google** tarafından işlenir; ödeme bilgilerinizi biz hiçbir zaman görmeyiz.
+- Ödemeler **Google Play** tarafından işlenir; ödeme bilgilerinizi biz hiçbir zaman görmeyiz.
 
 ## Cihazınızda saklanan bilgiler
 
@@ -38,7 +40,22 @@ Google Play Games ile giriş yaparsanız:
   tablosuna gönderilir ve diğer oyuncular tarafından görülebilir.
 
 Bu veriler [Google Gizlilik Politikası](https://policies.google.com/privacy)
-kapsamında işlenir. Giriş yapmazsanız oyun tamamen çevrimdışı çalışır.
+kapsamında işlenir. Giriş yapmazsanız Play Games özellikleri kullanılmaz.
+
+## Dünya liderlik tablosu (Firebase)
+
+Oyundaki dünya liderlik tablosu Google **Firebase** (Cloud Firestore, Avrupa –
+Frankfurt) üzerinde tutulur. NORMAL modda yeni bir rekor kırdığınızda ya da
+adınızı değiştirdiğinizde şunlar gönderilir:
+
+- oyun içinde seçtiğiniz ad,
+- NORMAL moddaki en yüksek skorunuz,
+- rastgele üretilmiş anonim bir Firebase kimliği (e-posta, telefon ya da Google
+  hesabı bilgisi içermez).
+
+Adınız ve skorunuz tabloda diğer oyuncular tarafından görülebilir. Bu veriler
+[Firebase gizlilik bilgileri](https://firebase.google.com/support/privacy)
+kapsamında işlenir ve siz silinmesini isteyene kadar saklanır.
 
 ## Uygulama içi satın almalar
 
@@ -83,7 +100,8 @@ silinmesini talep edebilirsiniz.
 **Bize silme talebi göndermek için**
 
 **carbonatgames@gmail.com** adresine *"UP to the TOP veri silme"* konulu bir
-e-posta gönderin. Talebinizi 30 gün içinde yanıtlarız.
+e-posta gönderin. Liderlik tablosundaki kaydınızı bulabilmemiz için oyun içi
+adınızı da yazın. Talebinizi 30 gün içinde yanıtlarız.
 
 **Silinen ve saklanan veriler**
 
@@ -93,7 +111,7 @@ e-posta gönderin. Talebinizi 30 gün içinde yanıtlarız.
 | Android yedeği (açıksa) | Google Hesabınızın yedekleme ayarlarından ayrıca silinir | Siz silene kadar Google yedeğinde kalır |
 | Play Games oyuncu adı ve liderlik tablosu skorları | Google tarafından silinir | Google'ın politikasına göre |
 | Satın alma kayıtları | **Silinmez**; Google Play tarafından yasal ve mali yükümlülükler için saklanır | Google Play'in politikasına göre |
-| Geliştiricinin sunucusundaki veriler | Sunucumuz yoktur; hakkınızda hiçbir veri saklamayız | Yok |
+| Dünya liderlik tablosundaki adınız ve skorunuz (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
 
 Satın alma kayıtları Google Play'de kaldığı için, verilerinizi silseniz bile
 satın aldığınız içerikler oyunu yeniden açtığınızda geri gelir.
@@ -113,8 +131,9 @@ Sorularınız için: carbonatgames@gmail.com
 
 *Last updated: September 15, 2026*
 
-**In short:** the game has no server of its own and sends no data to us. It uses
-no analytics, tracking or ads. Payments and the leaderboard are handled by Google.
+**In short:** the game sends only your in-game name and NORMAL best score to our
+world leaderboard (Google Firebase). It uses no analytics, tracking or ads.
+Payments are handled by Google Play.
 
 - **On your device:** your chosen name, scores, star balance, unlocked items,
   settings and race history. If you use more than one Google Play Games
@@ -125,6 +144,11 @@ no analytics, tracking or ads. Payments and the leaderboard are handled by Googl
   Games player ID and display name; NORMAL-mode scores are submitted to the
   public Google Play Games leaderboard. See the
   [Google Privacy Policy](https://policies.google.com/privacy).
+- **World leaderboard (Firebase):** when you set a new NORMAL best or change
+  your name, your in-game name, your NORMAL best score and a random anonymous
+  Firebase ID are stored in Google Cloud Firestore (Frankfurt) and are visible
+  to other players until you ask us to delete them. See
+  [Firebase privacy](https://firebase.google.com/support/privacy).
 - **In-app purchases:** processed by Google Play. We never see your payment
   details; the game only asks Google Play which products you own, to unlock and
   restore them.
@@ -144,5 +168,6 @@ no analytics, tracking or ads. Payments and the leaderboard are handled by Googl
   **Retained:** purchase records are kept by Google Play for legal and financial
   obligations (per Google Play's policy), so purchases are restored when you
   reopen the game. An Android backup, if enabled, stays in your Google backup
-  until you delete it. We have no server and keep no data about you.
+  until you delete it. Your world leaderboard entry (name and score) is deleted
+  within 30 days of an email request; please include your in-game name.
 - **Contact:** carbonatgames@gmail.com

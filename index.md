@@ -1,14 +1,14 @@
 # UP to the TOP — Gizlilik Politikası
 
-*Son güncelleme: 15 Eylül 2026*
+*Son güncelleme: 17 Eylül 2026*
 
 Bu politika, **UP to the TOP** oyununun (paket adı `com.carbonatgames.uptothetop`)
 hangi bilgileri kullandığını, nerede sakladığını ve kimlerle paylaştığını açıklar.
 
 ## Kısaca
 
-- Oyun yalnızca **dünya liderlik tablosu** için oyun içi adınızı ve NORMAL
-  rekorunuzu Google Firebase'teki tablomuza gönderir (aşağıya bakın); bunun
+- Oyun yalnızca **dünya liderlik tabloları** için oyun içi adınızı ve her moddaki
+  (NORMAL, SPEEDRUN, HARDCORE) rekorlarınızı Google Firebase'teki tablolarımıza gönderir (aşağıya bakın); bunun
   dışında hiçbir veri göndermez.
 - **Analitik, takip ya da reklam** kullanılmaz.
 - Ödemeler **Google Play** tarafından işlenir; ödeme bilgilerinizi biz hiçbir zaman görmeyiz.
@@ -49,11 +49,11 @@ kapsamında işlenir. Giriş yapmazsanız Play Games özellikleri kullanılmaz.
 ## Dünya liderlik tablosu (Firebase)
 
 Oyundaki dünya liderlik tablosu Google **Firebase** (Cloud Firestore, Avrupa –
-Frankfurt) üzerinde tutulur. NORMAL modda yeni bir rekor kırdığınızda ya da
+Frankfurt) üzerinde tutulur; her modun (NORMAL, SPEEDRUN, HARDCORE) ayrı bir listesi vardır. Herhangi bir modda yeni bir rekor kırdığınızda ya da
 adınızı değiştirdiğinizde şunlar gönderilir:
 
 - oyun içinde seçtiğiniz ad,
-- NORMAL moddaki en yüksek skorunuz,
+- o moddaki en yüksek skorunuz,
 - rastgele üretilmiş anonim bir Firebase kimliği (e-posta, telefon ya da Google
   hesabı bilgisi içermez).
 
@@ -116,7 +116,7 @@ adınızı da yazın. Talebinizi 30 gün içinde yanıtlarız.
 | Play Games oyuncu adı ve liderlik tablosu skorları | Google tarafından silinir | Google'ın politikasına göre |
 | Play Games Kayıtlı Oyunlar kaydı (oyun ilerlemesi) | Google Hesabınızdaki Play Games verileriyle birlikte silinir | Google'ın politikasına göre |
 | Satın alma kayıtları | **Silinmez**; Google Play tarafından yasal ve mali yükümlülükler için saklanır | Google Play'in politikasına göre |
-| Dünya liderlik tablosundaki adınız ve skorunuz (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
+| Dünya liderlik tablolarındaki adınız ve skorlarınız (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
 
 Satın alma kayıtları Google Play'de kaldığı için, verilerinizi silseniz bile
 satın aldığınız içerikler oyunu yeniden açtığınızda geri gelir.
@@ -134,10 +134,10 @@ Sorularınız için: carbonatgames@gmail.com
 
 # UP to the TOP — Privacy Policy
 
-*Last updated: September 15, 2026*
+*Last updated: September 17, 2026*
 
-**In short:** the game sends only your in-game name and NORMAL best score to our
-world leaderboard (Google Firebase). It uses no analytics, tracking or ads.
+**In short:** the game sends only your in-game name and your best score in each mode to our
+world leaderboards (Google Firebase). It uses no analytics, tracking or ads.
 Payments are handled by Google Play.
 
 - **On your device:** your chosen name, scores, star balance, unlocked items,
@@ -153,8 +153,8 @@ Payments are handled by Google Play.
   stars, unlocked items, in-game name, settings) is also saved to your Google
   account with Play Games Saved Games, so it comes back after reinstalling or
   on a new phone. Only you and this game can access it.
-- **World leaderboard (Firebase):** when you set a new NORMAL best or change
-  your name, your in-game name, your NORMAL best score and a random anonymous
+- **World leaderboards (Firebase):** there is one list per mode (NORMAL, SPEEDRUN, HARDCORE). When you set a new best in any mode or change
+  your name, your in-game name, your best score in that mode and a random anonymous
   Firebase ID are stored in Google Cloud Firestore (Frankfurt) and are visible
   to other players until you ask us to delete them. See
   [Firebase privacy](https://firebase.google.com/support/privacy).

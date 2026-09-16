@@ -38,6 +38,10 @@ Google Play Games ile giriş yaparsanız:
   bunları profilinizde göstermek ve liderlik tablosunda sizi tanımak için kullanır.
 - **NORMAL** modda bitirdiğiniz turların skoru Google Play Games dünya liderlik
   tablosuna gönderilir ve diğer oyuncular tarafından görülebilir.
+- Oyun ilerlemeniz (rekorlar, yıldızlar, açılan içerikler, oyun içi adınız,
+  ayarlar) Google Play Games **Kayıtlı Oyunlar** özelliğiyle Google hesabınıza
+  da kaydedilir; oyunu yeniden yüklediğinizde ya da telefon değiştirdiğinizde
+  geri gelir. Bu kayda yalnızca siz ve bu oyun erişebilir.
 
 Bu veriler [Google Gizlilik Politikası](https://policies.google.com/privacy)
 kapsamında işlenir. Giriş yapmazsanız Play Games özellikleri kullanılmaz.
@@ -110,6 +114,7 @@ adınızı da yazın. Talebinizi 30 gün içinde yanıtlarız.
 | Kullanıcı adı, rekorlar, yıldızlar, açılan içerikler, ayarlar, yarış geçmişi (cihazda) | "Verileri temizle" ile hemen ve kalıcı olarak silinir | Yok |
 | Android yedeği (açıksa) | Google Hesabınızın yedekleme ayarlarından ayrıca silinir | Siz silene kadar Google yedeğinde kalır |
 | Play Games oyuncu adı ve liderlik tablosu skorları | Google tarafından silinir | Google'ın politikasına göre |
+| Play Games Kayıtlı Oyunlar kaydı (oyun ilerlemesi) | Google Hesabınızdaki Play Games verileriyle birlikte silinir | Google'ın politikasına göre |
 | Satın alma kayıtları | **Silinmez**; Google Play tarafından yasal ve mali yükümlülükler için saklanır | Google Play'in politikasına göre |
 | Dünya liderlik tablosundaki adınız ve skorunuz (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
 
@@ -144,6 +149,10 @@ Payments are handled by Google Play.
   Games player ID and display name; NORMAL-mode scores are submitted to the
   public Google Play Games leaderboard. See the
   [Google Privacy Policy](https://policies.google.com/privacy).
+- **Saved Games (Google Play Games):** if you sign in, your progress (scores,
+  stars, unlocked items, in-game name, settings) is also saved to your Google
+  account with Play Games Saved Games, so it comes back after reinstalling or
+  on a new phone. Only you and this game can access it.
 - **World leaderboard (Firebase):** when you set a new NORMAL best or change
   your name, your in-game name, your NORMAL best score and a random anonymous
   Firebase ID are stored in Google Cloud Firestore (Frankfurt) and are visible
@@ -159,7 +168,7 @@ Payments are handled by Google Play.
   1. On-device data: Android Settings → Apps → UP to the TOP → Storage →
      **Clear data** (or uninstall). Deletes your name, scores, stars, unlocked
      items, settings and race history immediately and permanently.
-  2. Google Play Games data (player name, leaderboard scores): delete it from
+  2. Google Play Games data (player name, leaderboard scores, saved game): delete it from
      your Play Games profile settings or your
      [Google Account](https://myaccount.google.com); retained per Google's policy.
   3. Or email **carbonatgames@gmail.com** with the subject "UP to the TOP data

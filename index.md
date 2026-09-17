@@ -7,10 +7,13 @@ hangi bilgileri kullandığını, nerede sakladığını ve kimlerle paylaştı�
 
 ## Kısaca
 
-- Oyun yalnızca **dünya liderlik tabloları** için oyun içi adınızı ve her moddaki
-  (NORMAL, SPEEDRUN, HARDCORE) rekorlarınızı Google Firebase'teki tablolarımıza gönderir (aşağıya bakın); bunun
-  dışında hiçbir veri göndermez.
-- **Analitik, takip ya da reklam** kullanılmaz.
+- Oyun, **dünya liderlik tabloları** için oyun içi adınızı ve her moddaki
+  (NORMAL, SPEEDRUN, HARDCORE) rekorlarınızı Google Firebase'teki tablolarımıza gönderir (aşağıya bakın).
+- Mağazada **isteğe bağlı ödüllü reklamlar** vardır ve **Google AdMob** ile
+  gösterilir; yalnızca siz "reklam izle" düğmesine bastığınızda oynar. AdMob
+  reklam gösterebilmek için cihaz ve reklam kimliği gibi bilgileri toplar
+  (aşağıya bakın).
+- **Analitik** ya da oyun içi takip kullanılmaz.
 - Ödemeler **Google Play** tarafından işlenir; ödeme bilgilerinizi biz hiçbir zaman görmeyiz.
 
 ## Cihazınızda saklanan bilgiler
@@ -68,6 +71,29 @@ Google'da kalır; oyun bunlara erişemez. Oyun yalnızca, satın aldığınız i
 açabilmek ve yeni bir cihazda geri yükleyebilmek için hangi ürünlere sahip
 olduğunuzu Google Play'e sorar.
 
+## Reklamlar (Google AdMob)
+
+Mağazadaki **"reklam izle"** düğmesi, yıldız kazanmak için isteğe bağlı bir
+**ödüllü video reklam** gösterir. Reklam yalnızca siz bu düğmeye bastığınızda
+oynar; oyunun başka hiçbir yerinde reklam yoktur. Reklamlar **Google AdMob**
+tarafından sunulur ve AdMob bunun için şu bilgileri toplayıp işleyebilir:
+
+- cihazınızın **reklam kimliği** (Android Advertising ID),
+- IP adresi ve bundan çıkarılan yaklaşık konum,
+- cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil),
+- reklamla etkileşimleriniz (gösterim, tıklama) ve reklam hataları.
+
+Bu bilgiler reklam göstermek, ölçmek, sahtekârlığı önlemek ve (izin
+verdiyseniz) reklamları kişiselleştirmek için kullanılır ve
+[Google'ın iş ortağı sitelerinde veri kullanımı](https://policies.google.com/technologies/partner-sites)
+politikasına tabidir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre gibi
+izin gereken bölgelerde oyun, reklam göstermeden önce Google'ın izin formunu
+açar; kararınızı **Profil → AD PRIVACY OPTIONS** ile değiştirebilirsiniz.
+Kişiselleştirilmiş reklamları her yerde Android **Ayarlar → Google → Reklamlar**
+bölümünden kapatabilir ya da reklam kimliğinizi silebilirsiniz.
+
+Biz AdMob'un topladığı bu verilere erişmeyiz ve onları sizinle ilişkilendirmeyiz.
+
 ## İki kişilik yarış
 
 Yarış modu, **aynı Wi-Fi ağındaki** iki cihazı doğrudan birbirine bağlar. Oda
@@ -77,8 +103,10 @@ sunucudan geçmez ve saklanmaz.
 
 ## İzinler
 
-- **İnternet ve ağ durumu:** Google Play Games, satın almalar ve yarış modu için.
+- **İnternet ve ağ durumu:** Google Play Games, satın almalar, liderlik tabloları,
+  reklamlar ve yarış modu için.
 - **Faturalandırma:** Google Play üzerinden satın alma yapabilmek için.
+- **Reklam kimliği (AD_ID):** Google AdMob'un ödüllü reklamları sunabilmesi için.
 
 ## Çocuklar
 
@@ -117,14 +145,15 @@ adınızı da yazın. Talebinizi 30 gün içinde yanıtlarız.
 | Play Games Kayıtlı Oyunlar kaydı (oyun ilerlemesi) | Google Hesabınızdaki Play Games verileriyle birlikte silinir | Google'ın politikasına göre |
 | Satın alma kayıtları | **Silinmez**; Google Play tarafından yasal ve mali yükümlülükler için saklanır | Google Play'in politikasına göre |
 | Dünya liderlik tablolarındaki adınız ve skorlarınız (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
+| Reklam verileri (Google AdMob) | Biz saklamayız; reklam kimliğinizi Android ayarlarından silebilirsiniz | Google'ın politikasına göre |
 
 Satın alma kayıtları Google Play'de kaldığı için, verilerinizi silseniz bile
 satın aldığınız içerikler oyunu yeniden açtığınızda geri gelir.
 
 ## Değişiklikler
 
-Oyuna reklam ya da başka bir hizmet eklenirse bu politika güncellenir ve
-yukarıdaki tarih değişir.
+Oyuna başka bir hizmet eklenirse bu politika güncellenir ve yukarıdaki tarih
+değişir.
 
 ## İletişim
 
@@ -136,9 +165,21 @@ Sorularınız için: carbonatgames@gmail.com
 
 *Last updated: September 17, 2026*
 
-**In short:** the game sends only your in-game name and your best score in each mode to our
-world leaderboards (Google Firebase). It uses no analytics, tracking or ads.
+**In short:** the game sends your in-game name and your best score in each mode to our
+world leaderboards (Google Firebase). The shop has optional rewarded video ads served
+by Google AdMob, which play only when you tap "watch ad". It uses no analytics.
 Payments are handled by Google Play.
+
+- **Ads (Google AdMob):** optional rewarded video ads in the shop, shown only when
+  you tap the button. To serve them, AdMob may collect your device's advertising
+  ID, IP address (and approximate location derived from it), device and app
+  information, and ad interactions, used to show, measure and (with your consent)
+  personalise ads — see
+  [how Google uses data from partner apps](https://policies.google.com/technologies/partner-sites).
+  In regions that require consent (EEA, UK, Switzerland) the game shows Google's
+  consent form first; change your choice any time in **Profile → AD PRIVACY
+  OPTIONS**. You can opt out of personalised ads or delete your advertising ID
+  in Android **Settings → Google → Ads**. We don't access this data.
 
 - **On your device:** your chosen name, scores, star balance, unlocked items,
   settings and race history. If you use more than one Google Play Games

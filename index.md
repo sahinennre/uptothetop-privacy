@@ -41,6 +41,8 @@ Google Play Games ile giriş yaparsanız:
   bunları profilinizde göstermek ve liderlik tablosunda sizi tanımak için kullanır.
 - **NORMAL** modda bitirdiğiniz turların skoru Google Play Games dünya liderlik
   tablosuna gönderilir ve diğer oyuncular tarafından görülebilir.
+- Oyunda açtığınız **başarımlar** Google Play Games'e de bildirilir ve Play Games
+  profilinizde (Google'ın görünürlük ayarlarınıza göre) görünür.
 - Oyun ilerlemeniz (rekorlar, yıldızlar, açılan içerikler, oyun içi adınız,
   ayarlar) Google Play Games **Kayıtlı Oyunlar** özelliğiyle Google hesabınıza
   da kaydedilir; oyunu yeniden yüklediğinizde ya da telefon değiştirdiğinizde
@@ -60,8 +62,15 @@ adınızı değiştirdiğinizde şunlar gönderilir:
 - rastgele üretilmiş anonim bir Firebase kimliği (e-posta, telefon ya da Google
   hesabı bilgisi içermez).
 
-Adınız ve skorunuz tabloda diğer oyuncular tarafından görülebilir. Bu veriler
-[Firebase gizlilik bilgileri](https://firebase.google.com/support/privacy)
+Adınız ve skorunuz tabloda diğer oyuncular tarafından görülebilir.
+
+**Oyuncu kartı:** tabloda bir oyuncuya dokunulduğunda onun profil özeti açılır.
+Bunun için aynı anonim kimlikle şu özet de saklanır ve diğer oyuncular
+tarafından görülebilir: oyun içi adınız, her moddaki rekorunuz, oynadığınız tur
+sayısı, toplam topladığınız yıldız, yarış ve galibiyet sayınız, açtığınız
+başarım sayısı ve seçtiğiniz profil resmi, çerçevesi ve arka planı.
+
+Bu veriler [Firebase gizlilik bilgileri](https://firebase.google.com/support/privacy)
 kapsamında işlenir ve siz silinmesini isteyene kadar saklanır.
 
 ## Uygulama içi satın almalar
@@ -144,7 +153,7 @@ adınızı da yazın. Talebinizi 30 gün içinde yanıtlarız.
 | Play Games oyuncu adı ve liderlik tablosu skorları | Google tarafından silinir | Google'ın politikasına göre |
 | Play Games Kayıtlı Oyunlar kaydı (oyun ilerlemesi) | Google Hesabınızdaki Play Games verileriyle birlikte silinir | Google'ın politikasına göre |
 | Satın alma kayıtları | **Silinmez**; Google Play tarafından yasal ve mali yükümlülükler için saklanır | Google Play'in politikasına göre |
-| Dünya liderlik tablolarındaki adınız ve skorlarınız (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
+| Dünya liderlik tablolarındaki adınız, skorlarınız ve oyuncu kartı özetiniz (Firebase) | E-postayla talebinizden sonra 30 gün içinde silinir | Yok |
 | Reklam verileri (Google AdMob) | Biz saklamayız; reklam kimliğinizi Android ayarlarından silebilirsiniz | Google'ın politikasına göre |
 
 Satın alma kayıtları Google Play'de kaldığı için, verilerinizi silseniz bile
@@ -199,6 +208,13 @@ Payments are handled by Google Play.
   Firebase ID are stored in Google Cloud Firestore (Frankfurt) and are visible
   to other players until you ask us to delete them. See
   [Firebase privacy](https://firebase.google.com/support/privacy).
+- **Player card:** tapping a player on the leaderboard opens their profile summary.
+  For this the same anonymous ID also stores, visible to other players: your
+  in-game name, best score per mode, runs played, total stars collected, races
+  and wins, number of achievements unlocked and your chosen profile picture, frame and
+  background. Deleted on request like your leaderboard entry.
+- **Achievements:** achievements you unlock are also reported to Google Play Games
+  when you are signed in and appear on your Play Games profile.
 - **In-app purchases:** processed by Google Play. We never see your payment
   details; the game only asks Google Play which products you own, to unlock and
   restore them.
